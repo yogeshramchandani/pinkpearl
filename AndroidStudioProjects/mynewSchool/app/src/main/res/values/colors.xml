@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="toolbarColor">#8B0000</color> <!-- Dark Red for Toolbar -->
+    <color name="primaryTextColor">#212121</color> <!-- Keeping original dark text color -->
+    <color name="secondaryTextColor">#757575</color> <!-- Keeping original light text color -->
+    <color name="cardBackground">#F5F5F5</color> <!-- Light background for CardView -->
+    <color name="gridBackground">#FFDEDD</color>
+    <color name="drawerHeader">#350000</color> <!-- Soft light red for GridView -->
+</resources>

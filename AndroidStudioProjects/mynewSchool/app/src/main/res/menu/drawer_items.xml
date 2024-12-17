@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group2">
+        <item
+            android:icon="@drawable/ic_home"
+            android:id="@+id/navMenu"
+            android:title="Home" />
+        <item
+            android:icon="@drawable/ic_about"
+            android:id="@+id/navAbout"
+            android:title="About Us" />
+        <item
+            android:icon="@drawable/ic_events"
+            android:id="@+id/navPrg"
+            android:title="Events" />
+    </group>
+
+    <group android:id="@+id/group1">
+        <item
+            android:icon="@drawable/ic_gallary"
+            android:id="@+id/navGallery"
+            android:title="Gallery" />
+        <item
+            android:icon="@drawable/ic_contact"
+            android:id="@+id/navContact"
+            android:title="Contact Us" />
+        <item
+            android:icon="@drawable/ic_list"
+            android:id="@+id/contactList"
+            android:title="Contact List" />
+    </group>
+
+</menu>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="0dp"
+    android:showDividers="middle"> <!-- Remove any padding -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        > <!-- Remove inner padding -->
+
+        <!-- Toolbar with Background Color -->
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbarColor"
+            android:elevation="8dp"
+            android:titleTextColor="@android:color/white"
+            android:padding="0dp">
+
+            <ImageButton
+                android:id="@+id/buttonDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_info_menu"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                app:tint="@android:color/white" />
+            <TextView
+                android:text="Pink Pearl World"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </Toolbar>
+
+        <!-- Banner Image with Rounded Corners -->
+
+            <!-- ViewPager2 for auto-scrolling banner images -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerSlider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center" />
+
+            <!-- TabLayout for page indicators over the image -->
+        <!-- About Section -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/cardBackground"
+                android:layout_gravity="center">
+                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:text="About School"
+                        android:textSize="22sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_business_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pink Pearl School, established in the heart of Jaipur, aims to provide holistic education focusing on academic excellence and personal growth."
+                        android:padding="5dp"
+                        android:textColor="@color/secondaryTextColor" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/cardBackground"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:text="History"
+                        android:textSize="18sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_history_24"/>
+                    <TextView
+                        android:text="Founded in 2005, Pink Pearl School has been committed to providing quality education to students from various backgrounds. Over the years, we have earned recognition for our innovative approach to learning and extracurricular activities."
+                        android:padding="5dp"
+                        android:textColor="@color/secondaryTextColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/cardBackground"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:text="Mission"
+                        android:textSize="18sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_emoji_objects_24" />
+                    <TextView
+                        android:text="Our mission is to nurture young minds and guide them towards academic excellence while emphasizing holistic development. We strive to build responsible citizens with a global perspective."
+                        android:padding="5dp"
+                        android:textColor="@color/secondaryTextColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Facilities Section -->
+
+        <TextView
+            android:text="Recent Events >"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/primaryTextColor"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Events GridView Section -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@color/gridBackground"
+        >
+        <TextView
+            android:text="Recent Events >"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/primaryTextColor"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/annualfunction"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annual Function"
+            android:textSize="20sp"
+            android:textColor="@color/primaryTextColor"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Annual Function held last year at Pink Pearl School was a grand celebration of talent, culture, and togetherness. The event showcased an array of mesmerizing performances by students, including traditional dances, skits, musical renditions, and speeches that reflected the theme of the year: Unity in Diversity. "
+            android:textSize="16sp"
+            android:textColor="@color/primaryTextColor"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="8dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/sportsday"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sports Day"
+            android:textSize="20sp"
+            android:textColor="@color/primaryTextColor"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Sports Day at Pink Pearl School was an exhilarating event that celebrated teamwork, perseverance, and the spirit of healthy competition. Held on the sprawling school grounds, the day was packed with a variety of athletic events, including sprints, relay races, long jump, and tug-of-war."
+            android:textSize="16sp"
+            android:textColor="@color/primaryTextColor"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="8dp"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/contactDetailsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/toolbarColor"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- Section Header -->
+            <TextView
+                android:id="@+id/contactHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingBottom="12dp" />
+
+            <!-- Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_location"
+                    android:contentDescription="Address Icon"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/schoolAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pink Pearl School, Jaipur, Rajasthan, India"
+                    android:textSize="16sp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <!-- Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_phone"
+                    android:contentDescription="Phone Icon"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/schoolPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+91 9876543210"
+                    android:textSize="16sp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_email"
+                    android:contentDescription="Email Icon"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/schoolEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="info@pinkpearlschool.com"
+                    android:textSize="16sp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <!-- Social Media -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_facebook"
+                    android:contentDescription="Facebook Icon"
+                    android:layout_marginEnd="12dp"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_instagram"
+                    android:contentDescription="Instagram Icon"
+                    android:layout_marginEnd="12dp"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_twitter"
+                    android:contentDescription="Twitter Icon"
+                    android:layout_marginEnd="12dp"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_linkedin"
+                    android:contentDescription="LinkedIn Icon"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
